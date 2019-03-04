@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Imagens com Bootstrap</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<!-- The .rounded class adds rounded corners to an image. -->
+	<div class="container">
+		<h1>Rounded Images</h1>
+		<img src="cinqueterre.jpg" class="rounded" alt="Cinque Terre">
+	</div>
+
+	<!-- The .rounded-circle class shapes the image to a circle. -->
+	<div class="container">
+		<h1>Imagem arredondada</h1>
+		<img src="cinqueterre.jpg" class="rounded-circle" alt="Cinque Terre">
+	</div>
+
+	<!-- The .img-thumbnail class shapes the image to a thumbnail (bordered). -->
+	<div class="container">
+		<h1>Thumbnail images</h1>
+		<img src="cinqueterre.jpg" class="img-thumbnail" alt="Cinque Terre">
+	</div>
+
+	<!-- Float an image to the right with the .float-right class or to the left with .float-left. -->
+	<div class="container">
+		<h1>Float left e right</h1>
+		<img src="paris.jpg" class="float-left">
+		<img src="paris.jpg" class="float-right">
+	</div>
+
+	<!-- Center an image by adding the utility classes .mx-auto (margin:auto) and .d-block (display:block) to the image. -->
+	<div class="container">
+		<h1>Centralizando imagens</h1>
+		<img src="paris.jpg" class="mx-auto d-block">
+	</div>
+
+	<!-- Images come in all sizes. So do screens. Responsive images automatically adjust to fit the size of the screen.
+	Create responsive images by adding an .img-fluid class to the <img> tag. The image will then scale nicely to the parent element.
+	The .img-fluid class applies max-width: 100%; and height: auto; to the image. -->
+	<div class="container">
+		<h1>Imagem responsiva</h1>
+		<img class="img-fluid" src="img_chania.jpg" alt="Chania" width="460" height="345">
+	</div>
+</body>
+</html>
