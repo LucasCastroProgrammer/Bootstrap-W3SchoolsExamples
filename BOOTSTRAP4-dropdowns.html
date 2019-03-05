@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Dropdowns com Bootstrap 4</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<!-- A dropdown menu is a toggleable menu that allows the user to choose one value from a predefined list. -->
+	<div class="container">
+		<h1>Dropdown básico</h1>
+		<div class="dropdown">
+			<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+				Dropdown button
+			</button>
+			<div class="dropdown-menu">
+				<a href="#" class="dropdown-item">Link 1</a>
+				<a href="#" class="dropdown-item">Link 2</a>
+				<a href="#" class="dropdown-item">Link 3</a>
+			</div>
+		</div>
+	</div>
+	<br>
+
+	<!-- The .dropdown-divider class is used to separate links inside the dropdown menu with a thin horizontal border. -->
+	<div class="container">
+		<h1>Dropdown link divider</h1>
+		<div class="dropdown">
+			<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+				Dropdown button
+			</button>
+			<div class="dropdown-menu">
+				<a href="#" class="dropdown-item">Link 1</a>
+				<a href="#" class="dropdown-item">Link 2</a>
+				<a href="#" class="dropdown-item">Link 3</a>
+				<div class="dropdown-divider"></div>
+				<a href="#" class="dropdown-item">Outro link</a>
+			</div>
+		</div>
+	</div>
+	<br>
+
+	<!-- The .dropdown-header class is used to add headers inside the dropdown menu. -->
+	<div class="container">
+		<h1>Dropdown header</h1>
+		<div class="dropdown">
+			<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+				Dropdown button
+			</button>
+			<div class="dropdown-menu">
+				<div class="dropdown-header">Dropdown header 1</div>
+				<a href="#" class="dropdown-item">Link 1</a>
+				<a href="#" class="dropdown-item">Link 2</a>
+				<a href="#" class="dropdown-item">Link 3</a>
+				<div class="dropdown-header">Dropdown header 2</div>
+				<a href="#" class="dropdown-item">Link 4</a>
+				<a href="#" class="dropdown-item">Link 5</a>
+				<a href="#" class="dropdown-item">Link 6</a>
+			</div>
+		</div>
+	</div>
+	<br>
+
+	<!-- Highlight a specific dropdown item with the .active class (adds a blue background color).
+	To disable an item in the dropdown menu, use the .disabled class (gets a light-grey text color and a "no-parking-sign" icon on hover) -->
+	<div class="container">
+		<h1>Active e disabled</h1>
+		<div class="dropdown">
+			<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+				Dropdown button
+			</button>
+			<div class="dropdown-menu">
+				<a href="#" class="dropdown-item">Normal</a>
+				<a href="#" class="dropdown-item active">Active</a>
+				<a href="#" class="dropdown-item disabled">Disabled</a>
+			</div>
+		</div>
+	</div>
+	<br>
+
+	<!-- You can also create a "dropright" or "dropleft" menu, by adding the .dropright or .dropleft class to the dropdown element. Note that the caret/arrow is added automatically. -->
+	<div class="container">
+		<div class="dropdown dropright float-right">
+			<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+				Dropright
+			</button>
+			<div class="dropdown-menu">
+				<a href="#" class="dropdown-item">Link 1</a>
+				<a href="#" class="dropdown-item">Link 2</a>
+				<a href="#" class="dropdown-item">Link 3</a>
+				<div class="dropdown-divider"></div>
+				<a href="#" class="dropdown-item">Outro link</a>
+			</div>
+		</div>
+		<div class="dropdown dropleft float-left">
+			<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+				Dropleft
+			</button>
+			<div class="dropdown-menu">
+				<a href="#" class="dropdown-item">Link 1</a>
+				<a href="#" class="dropdown-item">Link 2</a>
+				<a href="#" class="dropdown-item">Link 3</a>
+				<div class="dropdown-divider"></div>
+				<a href="#" class="dropdown-item">Outro link</a>
+			</div>
+		</div>
+	</div>
+	<br>
+
+	<!-- To right-align the dropdown menu, add the .dropdown-menu-right class to the element with .dropdown-menu. -->
+	<br>
+	<div class="container">
+		<h1>Super dropdown</h1>
+		<div class="dropdown">
+			<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+				Super dropdown
+			</button>
+			<div class="dropdown-menu dropdown-menu-right">
+				<a href="#" class="dropdown-item">Link 1</a>
+				<a href="#" class="dropdown-item">Link 2</a>
+				<a href="#" class="dropdown-item">Link 3</a>
+			</div>
+		</div>
+	</div>
+	<br>
+
+	<!-- If you want the dropdown menu to expand upwards instead of downwards, change the <div> element with class="dropdown" to "dropup". -->
+	<div class="container">
+		<h1>Droup</h1>
+		<div class="dropup">
+			<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+				Dropup
+			</button>
+			<div class="dropdown-menu">
+				<a href="#" class="dropdown-item">Link 1</a>
+				<a href="#" class="dropdown-item">Link 2</a>
+			</div>
+		</div>
+	</div>
+	<br>
+
+	<!-- The .dropdown-item-text class is used to add plain text to a dropdown item, or used on links for default link styling. -->
+	<div class="container">
+		<h1>Dropdown text</h1>
+		<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+			Dropdown text
+		</button>
+		<div class="dropdown-menu">
+			<a href="#" class="dropdown-item">Link 1</a>
+			<a href="#" class="dropdown-item">Link 2</a>
+			<a href="#" class="dropdown-item-text">Text Link</a>
+			<span class="dropdown-item-text">Just Text</span>
+		</div>
+	</div>
+	<br>
+
+	<!-- Grouped Buttons with a Dropdown -->
+	<div class="container">
+		<h1>Dropdown group button</h1>
+		<div class="btn-group">
+			<button type="button" class="btn btn-primary">Apple</button>
+			<button type="button" class="btn btn-primary">Samsung</button>
+			<div class="btn-group">
+				<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+					Sony
+				</button>
+				<div class="dropdown-menu">
+					<a href="#" class="dropdown-item">Tablet</a>
+					<a href="#" class="dropdown-item">Smartphone</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br>
+
+	<!-- Split button dropdowns -->
+	<div class="container">
+		<h1>Dropdowns contextuais</h1>
+		<div class="btn-group">
+			<button type="button" class="btn btn-primary">Primary</button>
+			<button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split"></button>
+		</div>
+		<div class="btn-group">
+			<button type="button" class="btn btn-secondary">Secondary</button>
+			<button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split"></button>
+		</div>
+		<div class="btn-group">
+			<button type="button" class="btn btn-success">Success</button>
+			<button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split"></button>
+		</div>
+		<div class="btn-group">
+			<button type="button" class="btn btn-info">Info</button>
+			<button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split"></button>
+		</div>
+		<div class="btn-group">
+			<button type="button" class="btn btn-warning">Warning</button>
+			<button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split"></button>
+		</div>
+		<div class="btn-group">
+			<button type="button" class="btn btn-danger">Danger</button>
+			<button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split"></button>
+		</div>
+	</div>
+
+	<!-- Vertical button group w/ dropdown -->
+	<div class="container">
+		<h1>Dropdown group button</h1>
+		<div class="btn-group-vertical">
+			<button type="button" class="btn btn-primary">Apple</button>
+			<button type="button" class="btn btn-primary">Samsung</button>
+			<div class="btn-group">
+				<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+					Sony
+				</button>
+				<div class="dropdown-menu">
+					<a href="#" class="dropdown-item">Tablet</a>
+					<a href="#" class="dropdown-item">Smartphone</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
