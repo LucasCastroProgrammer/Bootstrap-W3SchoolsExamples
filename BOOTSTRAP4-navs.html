@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Navegação com Bootstrap</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<!-- If you want to create a simple horizontal menu, add the .nav class to a <ul> element, followed by .nav-item for each <li> and add the .nav-link class to their links. -->
+	<div class="container">
+		<h1>Navegação simples</h1>
+		<ul class="nav">
+			<li class="nav-item"><a href="#" class="nav-link">Link</a></li>
+			<li class="nav-item"><a href="#" class="nav-link">Link</a></li>
+			<li class="nav-item"><a href="#" class="nav-link">Link</a></li>
+			<li class="nav-item"><a href="#" class="nav-link disabled">Disabled</a></li>
+		</ul>
+	</div>
+	<br>
+
+	<!-- Add the .justify-content-center class to center the nav, and the .justify-content-end class to right-align the nav. -->
+	<div class="container">
+		<h1>Alinhamento da barra de nevegação</h1>
+		<ul class="nav">
+			<li class="nav-item"><a href="#" class="nav-link">Link</a></li>
+			<li class="nav-item"><a href="#" class="nav-link">Link</a></li>
+			<li class="nav-item"><a href="#" class="nav-link">Link</a></li>
+			<li class="nav-item"><a href="#" class="nav-link disabled">Disabled</a></li>
+		</ul>
+	<br>
+		<ul class="nav justify-content-center">
+			<li class="nav-item"><a href="#" class="nav-link">Link</a></li>
+			<li class="nav-item"><a href="#" class="nav-link">Link</a></li>
+			<li class="nav-item"><a href="#" class="nav-link">Link</a></li>
+			<li class="nav-item"><a href="#" class="nav-link disabled">Disabled</a></li>
+		</ul>
+	<br>
+		<ul class="nav justify-content-end">
+			<li class="nav-item"><a href="#" class="nav-link">Link</a></li>
+			<li class="nav-item"><a href="#" class="nav-link">Link</a></li>
+			<li class="nav-item"><a href="#" class="nav-link">Link</a></li>
+			<li class="nav-item"><a href="#" class="nav-link disabled">Disabled</a></li>
+		</ul>
+	<br>
+	</div>
+	<br>
+
+	<!-- Add the .flex-column class to create a vertical nav. -->
+	<div class="container">
+		<h1>Navegação vertical</h1>
+		<ul class="nav flex-column">
+			<li class="nav-item"><a href="#" class="nav-link">Link</a></li>
+			<li class="nav-item"><a href="#" class="nav-link">Link</a></li>
+			<li class="nav-item"><a href="#" class="nav-link">Link</a></li>
+			<li class="nav-item"><a href="#" class="nav-link disabled">Disabled</a></li>
+		</ul>
+	</div>
+	<br>
+
+	<!-- Turn the nav menu into navigation tabs with the .nav-tabs class. Add the .active class to the active/current link. -->
+	<div class="container">
+		<h1>Navegação com tabs</h1>
+		<ul class="nav nav-tabs">
+			<li class="nav-item"><a href="#" class="nav-link active">Link</a></li>
+			<li class="nav-item"><a href="#" class="nav-link">Link</a></li>
+			<li class="nav-item"><a href="#" class="nav-link">Link</a></li>
+			<li class="nav-item"><a href="#" class="nav-link disabled">Disabled</a></li>
+		</ul>
+	</div>
+	<br>
+
+	<!-- Turn the nav menu into navigation pills with the .nav-pills class. -->
+	<div class="container">
+		<h1>Navegação com pills</h1>
+		<ul class="nav nav-pills">
+			<li class="nav-item"><a href="#" class="nav-link active">Link</a></li>
+			<li class="nav-item"><a href="#" class="nav-link">Link</a></li>
+			<li class="nav-item"><a href="#" class="nav-link">Link</a></li>
+			<li class="nav-item"><a href="#" class="nav-link disabled">Disabled</a></li>
+		</ul>
+	</div>
+	<br>
+
+	<!-- Justify the tabs/pills with the .nav-justified class (equal width). -->
+	<div class="container">
+		<h1>Navegação justified com pills</h1>
+		<ul class="nav nav-pills nav-justified">
+			<li class="nav-item"><a href="#" class="nav-link active">Link</a></li>
+			<li class="nav-item"><a href="#" class="nav-link">Link</a></li>
+			<li class="nav-item"><a href="#" class="nav-link">Link</a></li>
+			<li class="nav-item"><a href="#" class="nav-link disabled">Disabled</a></li>
+		</ul>
+	</div>
+	<br>
+	<div class="container">
+		<h1>Navegação justified com tabs</h1>
+		<ul class="nav nav-tabs nav-justified">
+			<li class="nav-item"><a href="#" class="nav-link active">Link</a></li>
+			<li class="nav-item"><a href="#" class="nav-link">Link</a></li>
+			<li class="nav-item"><a href="#" class="nav-link">Link</a></li>
+			<li class="nav-item"><a href="#" class="nav-link disabled">Disabled</a></li>
+		</ul>
+	</div>
+	<br>
+
+	<!-- Pills with dropdown -->
+	<div class="container">
+		<h1>Navegação pills com dropdown</h1>
+		<ul class="nav nav-pills">
+			<li class="nav-item"><a href="#" class="nav-link active">Active</a></li>
+			<li class="nav-item dropdown">
+				<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Dropdown</a>
+				<div class="dropdown-menu">
+					<a href="dropdown-item" href="#">Link 1</a>
+					<a href="dropdown-item" href="#">Link 2</a>
+					<a href="dropdown-item" href="#">Link 3</a>
+				</div>
+			</li>
+			<li class="nav-item"><a href="#" class="nav-link">Link</a></li>
+			<li class="nav-item"><a href="#" class="nav-link disabled">Disabled</a></li>
+		</ul>
+	</div>
+	<br>
+
+	<!-- Tabs with dropdown -->
+	<div class="container">
+		<h1>Navegação tabs com dropdown</h1>
+		<ul class="nav nav-tabs">
+			<li class="nav-item"><a href="#" class="nav-link active">Active</a></li>
+			<li class="nav-item dropdown">
+				<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Dropdown</a>
+				<div class="dropdown-menu">
+					<a href="dropdown-item" href="#">Link 1</a>
+					<a href="dropdown-item" href="#">Link 2</a>
+					<a href="dropdown-item" href="#">Link 3</a>
+				</div>
+			</li>
+			<li class="nav-item"><a href="#" class="nav-link">Link</a></li>
+			<li class="nav-item"><a href="#" class="nav-link disabled">Disabled</a></li>
+		</ul>
+	</div>
+	<br>
+
+	<!-- To make the tabs toggleable, add the data-toggle="tab" attribute to each link. Then add a .tab-pane class with a unique ID for every tab and wrap them inside a <div> element with class .tab-content. -->
+	<div class="container">
+		<ul class="nav nav-tabs">
+			<li class="nav-item">
+				<a href="#home" class="nav-link active" data-toggle="tab">Home</a>
+			</li>
+			<li class="nav-item">
+				<a href="#menu1" class="nav-link" data-toggle="tab">Menu 1</a>
+			</li>
+			<li class="nav-item">
+				<a href="#menu2" class="nav-link" data-toggle="tab">Menu 2</a>
+			</li>
+		</ul>
+
+		<div class="tab-content">
+			<div class="tab-pane container active" id="home">...</div>
+			<div class="tab-pane container fade" id="menu1">...</div>
+			<div class="tab-pane container fade" id="menu2">...</div>
+		</div>
+	</div>
+	<br>
+
+	<!-- The same code applies to pills; only change the data-toggle attribute to data-toggle="pill". -->
+	<div class="container">
+		<ul class="nav nav-pills">
+			<li class="nav-item">
+				<a href="#home2" class="nav-link active" data-toggle="tab">Home</a>
+			</li>
+			<li class="nav-item">
+				<a href="#menu3" class="nav-link" data-toggle="tab">Menu 1</a>
+			</li>
+			<li class="nav-item">
+				<a href="#menu4" class="nav-link" data-toggle="tab">Menu 2</a>
+			</li>
+		</ul>
+
+		<div class="tab-content">
+			<div class="tab-pane container active" id="home2">...</div>
+			<div class="tab-pane container fade" id="menu3">...</div>
+			<div class="tab-pane container fade" id="menu4">...</div>
+		</div>
+	</div>
+	<br>
+</body>
+</html>
