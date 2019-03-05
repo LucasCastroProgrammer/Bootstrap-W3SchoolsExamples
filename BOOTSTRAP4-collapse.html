@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Collapse com Bootstrap</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<!-- Collapsibles are useful when you want to hide and show large amount of content. -->
+	<div class="container">
+		<h1>Collapse básico</h1>
+		<button data-toggle="collapse" data-target="#demo">Collapsible</button>
+
+		<div id="demo" class="collapse">
+			Lorem ipsum dolor text....
+		</div>
+	</div>
+	<br>
+
+	<!-- By default, the collapsible content is hidden. However, you can add the .show class to show the content by default. -->
+	<div class="container">
+		<h1>Collapse básico</h1>
+		<button data-toggle="collapse" data-target="#demo2">Collapsible</button>
+
+		<div id="demo2" class="collapse show">
+			Lorem ipsum dolor text....
+		</div>
+	</div>
+
+	<!-- The following example shows a simple accordion by extending the card component. -->
+	<div class="container">
+		<div id="accordion">
+			<div class="card">
+				<div class="card-header">
+					<a href="#c1" class="card-link" data-toggle="collapse">#1</a>
+				</div>
+			</div>
+			<div id="c1" class="collapse show" data-parent="#accordion">
+				<div class="card-body">
+					Lorem ipsum...
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="card-header">
+					<a href="#c2" class="card-link" data-toggle="collapse">#2</a>
+				</div>
+			</div>
+			<div id="c2" class="collapse" data-parent="#accordion">
+				<div class="card-body">
+					Lorem ipsum...
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="card-header">
+					<a href="#c3" class="card-link" data-toggle="collapse">#3</a>
+				</div>
+			</div>
+			<div id="c3" class="collapse" data-parent="#accordion">
+				<div class="card-body">
+					Lorem ipsum...
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
