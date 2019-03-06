@@ -76,5 +76,269 @@
 	<br>
 
 	<!-- Use any of the .bg-color classes to change the background color of the navbar (.bg-primary, .bg-success, .bg-info, .bg-warning, .bg-danger, .bg-secondary, .bg-dark and .bg-light) -->
+	<div class="container">
+		<h1>Barra de navegação colorida</h1>
+		<nav class="navbar navbar-expand-sm bg-light navbar-light">
+			<ul class="navbar-nav">
+				<li class="nav-item active">
+					<a href="#" class="nav-link">Active</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link">Link</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link">Link</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link disabled">Disabled</a>
+				</li>
+			</ul>
+		</nav>
+		<br>
+		<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+			<ul class="navbar-nav">
+				<li class="nav-item active">
+					<a href="#" class="nav-link">Active</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link">Link</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link">Link</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link disabled">Disabled</a>
+				</li>
+			</ul>
+		</nav>
+		<br>
+		<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+			<ul class="navbar-nav">
+				<li class="nav-item active">
+					<a href="#" class="nav-link">Active</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link">Link</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link">Link</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link disabled">Disabled</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+	<br>
+	<!-- Active/disabled state: Add the .active class to an <a> element to highlight the current link, or the .disabled class to indicate that the link is un-clickable. -->
+
+	<!-- The .navbar-brand class is used to highlight the brand/logo/project name of your page. -->
+	<div class="container">
+		<h1>Navbar com logo</h1>
+		<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+			<a href="#" class="navbar-brand">Logo</a>
+			<ul class="navbar-nav">
+				<li class="nav-item active">
+					<a href="#" class="nav-link">Active</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link">Link</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link">Link</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link disabled">Disabled</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+
+	<!-- When using the .navbar-brand class on images, Bootstrap 4 will automatically style the image to fit the navbar vertically. -->
+	<div class="container">
+		<h1>Navbar com logo 2</h1>
+		<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+			<a href="#" class="navbar-brand"><img src="img_avatar1.png" alt="Logo" style="width: 40px;"></a>
+			<ul class="navbar-nav">
+				<li class="nav-item active">
+					<a href="#" class="nav-link">Active</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link">Link</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link">Link</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link disabled">Disabled</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+	<br>
+
+	<!-- Very often, especially on small screens, you want to hide the navigation links and replace them with a button that should reveal them when clicked on.
+	To create a collapsible navigation bar, use a button with class="navbar-toggler", data-toggle="collapse" and data-target="#thetarget". Then wrap the navbar content (links, etc) inside a div element with class="collapse navbar-collapse", followed by an id that matches the data-target of the button: "thetarget". -->
+	<div class="container">
+		<h1>Navbar com collapse</h1>
+		<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+			<a href="#" class="navbar-brand">Navbar</a>
+
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"><span class="navbar-toggler-icon"></span></button>
+
+			<div class="collapse navbar-collapse" id="collapsibleNavbar">
+				<ul class="navbar-nav">
+					<li class="nav-item"><a href="#" class="nav-link">Link</a></li>
+					<li class="nav-item"><a href="#" class="nav-link">Link</a></li>
+					<li class="nav-item"><a href="#" class="nav-link">Link</a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+	<br>
+
+	<!-- Navbars can also hold dropdown menus. -->
+	<div class="container">
+		<h1>Navbar com logo</h1>
+		<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+			<a href="#" class="navbar-brand">Logo</a>
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a href="#" class="nav-link">Link</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link">Link</a>
+				</li>
+
+				<li class="nav-item dropdown">
+					<a href="#" class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">
+						Dropdown link
+					</a>
+					<div class="dropdown-menu">
+						<a href="#" class="dropdown-item">Link 1</a>
+						<a href="#" class="dropdown-item">Link 2</a>
+						<a href="#" class="dropdown-item">Link 3</a>
+					</div>
+				</li>
+			</ul>
+		</nav>
+	</div>
+	<br>
+
+	<div class="container">
+		<h1>Formulários e botões</h1>
+		<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+			<form class="form-inline" action="#">
+				<input type="text" class="form-control mr-sm-2" placeholder="Search">
+				<button class="btn btn-success" type="submit">Search</button>
+			</form>
+		</nav>
+		<br>
+		<!-- You can also use other input classes, such as .input-group-prepend or .input-group-append to attach an icon or help text next to the input field. -->
+		<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+			<form class="form-inline" action="#">
+				<div class="input-group">
+					<div class="input-group-prepend">
+						<span class="input-group-text">@</span>
+					</div>
+				</div>
+				<input type="text" class="form-control mr-sm-2" placeholder="Search">
+			</form>
+		</nav>
+	</div>
+
+	<!-- Use the .navbar-text class to vertical align any elements inside the navbar that are not links (ensures proper padding and text color). -->
+	<div class="container">
+		<h1>Barra de navegação básica vertical</h1>
+		<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a href="#" class="nav-link">Link 1</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link">Link 2</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link">Link 3</a>
+				</li>
+			</ul>
+
+			<span class="navbar-text">
+				Navbar text.
+			</span>
+		</nav>
+	</div>
+	<br>
+
+	<!-- The navigation bar can also be fixed at the top or at the bottom of the page.
+	A fixed navigation bar stays visible in a fixed position (top or bottom) independent of the page scroll.
+	The .fixed-top class makes the navigation bar fixed at the top -->
+	<div class="container">
+		<h1>Barra de navegação básica vertical</h1>
+		<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a href="#" class="nav-link">Link 1</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link">Link 2</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link">Link 3</a>
+				</li>
+			</ul>
+
+			<span class="navbar-text">
+				Navbar text.
+			</span>
+		</nav>
+	</div>
+	<br>
+
+	<!-- Use the .fixed-bottom class to make the navbar stay at the bottom of the page. -->
+	<div class="container">
+		<h1>Barra de navegação básica vertical</h1>
+		<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-bottom">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a href="#" class="nav-link">Link 1</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link">Link 2</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link">Link 3</a>
+				</li>
+			</ul>
+
+			<span class="navbar-text">
+				Navbar text.
+			</span>
+		</nav>
+	</div>
+	<br>
+
+	<!-- Use the .sticky-top class to make the navbar fixed/stay at the top of the page when you scroll past it. Note: This class does not work in IE11 and earlier (will treat it as position:relative). -->
+	<div class="container">
+		<h1>Barra de navegação básica vertical</h1>
+		<nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a href="#" class="nav-link">Link 1</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link">Link 2</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link">Link 3</a>
+				</li>
+			</ul>
+
+			<span class="navbar-text">
+				Navbar text.
+			</span>
+		</nav>
+	</div>
+	<br>
 </body>
 </html>
