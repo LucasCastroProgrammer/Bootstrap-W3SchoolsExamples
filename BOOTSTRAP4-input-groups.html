@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Grupos de input</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<!-- The .input-group class is a container to enhance an input by adding an icon, text or a button in front or behind the input field as a "help text".
+	Use .input-group-prepend to add the help text in front of the input, and .input-group-append to add it behind the input.
+	At last, add the .input-group-text class to style the specified help text. -->
+	<div class="container">
+		<h1>Exemplo inicial de input group</h1>
+		<form>
+			<div class="input-group mb-3">
+				<div class="input-group-prepend">
+					<span class="input-group-text">@</span>
+				</div>
+				<input type="text" class="form-control" placeholder="username">
+			</div>
+
+			<div class="input-group mb-3">
+				<input type="text" class="form-control" placeholder="Your Email">
+				<div class="input-group-append">
+					<span class="input-group-text">@example.com</span>
+				</div>
+			</div>
+		</form>
+	</div>
+	<!-- Tip: We use the .mb-3 utility class to ensure that the input group gets a proper margin bottom.-->
+
+	<div class="container">
+		<h1>Input Group Sizing</h1>
+		<form>
+			<div class="input-group mb-3 input-group-sm">
+				<div class="input-group-prepend">
+					<span class="input-group-text">Small</span>
+				</div>
+				<input type="text" class="form-control">
+			</div>
+		</form>
+		<form>
+			<div class="input-group mb-3">
+				<div class="input-group-prepend">
+					<span class="input-group-text">Default</span>
+				</div>
+				<input type="text" class="form-control">
+			</div>
+		</form>
+		<form>
+			<div class="input-group mb-3 input-group-lg">
+				<div class="input-group-prepend">
+					<span class="input-group-text">Large</span>
+				</div>
+				<input type="text" class="form-control">
+			</div>
+		</form>
+	</div>
+
+	<!-- Add multiple inputs or addons. -->
+	<div class="container">
+		<h1>Multiple Inputs and Helpers</h1>
+		<form>
+			<div class="input-group mb-3">
+				<div class="input-group-prepend">
+					<span class="input-group-text">Person</span>
+				</div>
+				<input type="text" class="form-control" placeholder="First Name">
+				<input type="text" name="form-control" placeholder="Last Name">
+			</div>
+		</form>
+
+		<form>
+			<div class="input-group mb-3">
+				<div class="input-group-prepend">
+					<span class="input-group-text">One</span>
+					<span class="input-group-text">Two</span>
+					<span class="input-group-text">Three</span>
+				</div>
+			</div>
+		</form>
+	</div>
+
+	<!-- You can also use checkboxes or radio buttons instead of text. -->
+	<div class="container">
+		<h1>Input Group with Checkboxes and Radios</h1>
+		<div class="input-group mb-3">
+			<div class="input-group-prepend">
+				<div class="input-group-text">
+					<input type="checkbox">
+				</div>
+			</div>
+			<input type="text" class="form-control" placeholder="Some text">
+		</div>
+
+		<div class="input-group mb-3">
+			<div class="input-group-prepend">
+				<div class="input-group-text">
+					<input type="radio">
+				</div>
+			</div>
+			<input type="text" class="form-control" placeholder="Some text">
+		</div>
+	</div>
+
+	<div class="container">
+		<h1>Input Group Buttons</h1>
+		<div class="input-group mb-3">
+			<div class="input-group-prepend">
+				<button class="btn btn-outline-primary" type="button">Basic Button</button>
+			</div>
+			<input type="text" name="form-control" placeholder="Some text">
+		</div>
+
+		<div class="input-group mb-3">
+			<input type="text" name="form-control" placeholder="Search">
+			<div class="input-group-append">
+				<button class="btn btn-success" type="submit">Go</button>
+			</div>
+		</div>
+
+		<div class="input-group mb-3">
+			<input type="text" class="form-control" placeholder="Something clever...">
+			<div class="input-group-primary">
+				<button class="btn btn-primary" type="button">OK</button>
+				<button class="btn btn-danger" type="button">Cancel</button>
+			</div>
+		</div>
+	</div>
+
+	<!-- Add a dropdown button in the input group. Note that you don't need the .dropdown wrapper, as you normally would. -->
+	<div class="container">
+		<h1>Input Group with Dropdown Button</h1>
+		<div class="input-group mt-3 mb-3">
+			<div class="input-group-prepend">
+				<button type="button" class="btn btn-outline-secondary dropdown-toggle" data-toggle="dropdown">Dropdown button</button>
+				
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="#">Link 1</a>
+					<a class="dropdown-item" href="#">Link 2</a>
+					<a class="dropdown-item" href="#">Link 3</a>
+				</div>
+			</div>
+			<input type="text" class="form-control" placeholder="Username">
+		</div>
+	</div>
+
+	<!-- Put labels outside of the input group, and remember that the value of the for attribute should match the id of the input. -->
+	<div class="container">
+		<h1>Input Group Labels</h1>
+		<label>Write your email here:</label>
+		<div class="input-group mb-3">
+			<input type="text" class="form-control" placeholder="Email" id="demo" name="email">
+			<div class="input-group-append">
+				<span class="input-group-text">@example.com</span>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
