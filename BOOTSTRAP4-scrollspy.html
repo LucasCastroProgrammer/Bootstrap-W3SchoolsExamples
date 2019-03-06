@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Scrollspy com Bootstrap</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+	<!-- Scrollspy is used to automatically update links in a navigation list based on scroll position. -->
+	<div class="container-fluid">
+		<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+			<ul class="navbar-nav">
+				<li class="navitem">
+					<a href="#section1" class="nav-link">Section 1</a>
+				</li>
+				<li class="navitem">
+					<a href="#section2" class="nav-link">Section 2</a>
+				</li>
+				<li class="navitem">
+					<a href="#section3" class="nav-link">Section 3</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a href="#" class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">Section 4</a>
+					<div class="dropdown-menu">
+						<a href="#section41" class="dropdown-item">Link 1</a>
+						<a href="#section42" class="dropdown-item">Link 2</a>
+					</div>
+				</li>
+			</ul>
+		</nav>
+
+		<div id="section1" class="container-fluid bg-success" style="padding-top: 70px; padding-bottom: 70px;">
+			<h1>Section 1</h1>
+			<p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+			<p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+		</div>
+
+		<div id="section2" class="container-fluid bg-warning" style="padding-top: 70px; padding-bottom: 70px;">
+			<h1>Section 2</h1>
+			<p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+			<p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+		</div>
+
+		<div id="section3" class="container-fluid bg-secondary" style="padding-top: 70px; padding-bottom: 70px;">
+			<h1>Section 3</h1>
+			<p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+			<p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+		</div>
+
+		<div id="section41" class="container-fluid bg-danger" style="padding-top: 70px; padding-bottom: 70px;">
+			<h1>Section 4.1</h1>
+			<p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+			<p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+		</div>
+
+		<div id="section42" class="container-fluid bg-info" style="padding-top: 70px; padding-bottom: 70px;">
+			<h1>Section 4.2</h1>
+			<p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+			<p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+		</div>
+	</div>
+
+	<!-- Add data-spy="scroll" to the element that should be used as the scrollable area (often this is the <body> element).
+	Then add the data-target attribute with a value of the id or the class name of the navigation bar (.navbar). This is to make sure that the navbar is connected with the scrollable area.
+	Note that scrollable elements must match the ID of the links inside the navbar's list items (<div id="section1"> matches <a href="#section1">).
+	The optional data-offset attribute specifies the number of pixels to offset from top when calculating the position of scroll. This is useful when you feel that the links inside the navbar changes the active state too soon or too early when jumping to the scrollable elements. Default is 10 pixels.
+	Requires relative positioning: The element with data-spy="scroll" requires the CSS position property, with a value of "relative" to work properly. -->
+</body>
+</html>
