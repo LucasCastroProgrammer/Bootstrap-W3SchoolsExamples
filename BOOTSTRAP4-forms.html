@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Formulários com Bootstrap</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<!-- Form controls automatically receive some global styling with Bootstrap:
+	All textual <input>, <textarea>, and <select> elements with class .form-control have a width of 100%. -->
+
+	<!-- Bootstrap provides two types of form layouts:
+	Stacked (full-width) form
+	Inline form -->
+
+	<!-- The following example creates a stacked form with two input fields, one checkbox, and a submit button.
+	Add a wrapper element with .form-group, around each form control, to ensure proper margins -->
+	<div class="container">
+		<h1>Exemplo inicial de formulário</h1>
+		<form action="#">
+			<div class="form-group">
+				<label for="email">Email address:</label>
+				<input type="email" class="form-control" id="email">
+			</div>
+			<div class="form-group">
+				<label for="pwd">Password:</label>
+				<input type="password" class="form-control" id="pwd">
+			</div>
+			<div class="form-group form-check">
+				<label class="form-check-label">
+					<input type="checkbox" class="form-check-input"> Remember me
+				</label>
+			</div>
+			<button type="submit" class="btn btn-primary">Submit</button>
+		</form>
+	</div>
+
+	<!-- In an inline form, all of the elements are inline and left-aligned.
+	Note: This only applies to forms within viewports that are at least 576px wide. On screens smaller than 576px, it will stack horizontally.
+	Additional rule for an inline form:
+	Add class .form-inline to the <form> element -->
+	<div class="container">
+		<h1>Exemplo de formulário inline</h1>
+		<form class="form-inline" action="#">
+			<label for="email">Email address:</label>
+			<input type="email" class="form-control" id="email">
+			
+			<label for="pwd">Password:</label>
+			<input type="password" class="form-control" id="pwd">
+			<div class="form-check">
+				<label class="form-check-label">
+					<input type="checkbox" class="form-check-input"> Remember me
+				</label>
+			</div>
+			<button type="submit" class="btn btn-primary">Submit</button>
+		</form>
+	</div>
+
+	<!-- The inline form above feels "compressed", and will look much better with Bootstrap's spacing utilities. The following example adds a right margin (.mr-sm-2) to each input on all devices (small and up). And a margin bottom class (.mb-2) is used to style the input field when it breaks (goes from horizontal to vertical due to not enough space/width). -->
+	<div class="container">
+		<h1>Exemplo de formulário inline 2</h1>
+		<form class="form-inline" action="#">
+			<label for="email" class="mr-sm-2">Email address:</label>
+			<input type="email" class="form-control mb-2 mr-sm-2" id="email">
+			
+			<label for="pwd" class="mr-sm-2">Password:</label>
+			<input type="password" class="form-control mb-2 mr-sm-2" id="pwd">
+			<div class="form-check mb-2 mr-sm-2">
+				<label class="form-check-label">
+					<input type="checkbox" class="form-check-input"> Remember me
+				</label>
+			</div>
+			<button type="submit" class="btn btn-primary mb-2">Submit</button>
+		</form>
+	</div>	
+</body>
+</html>
