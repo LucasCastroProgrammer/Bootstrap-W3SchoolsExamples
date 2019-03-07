@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Exemplos variados de grid</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<!-- Below we have collected some examples of Bootstrap 4 grid layouts. -->
+
+	<!-- Use the .col class on a specified number of elements and Bootstrap will recognize how many elements there are (and create equal-width columns). In the example below, we use three col elements, which gets a width of 33.33% each. -->
+	<div class="container-fluid">
+		<h1>Three Equal Columns</h1>
+		<div class="row">
+			<div class="col bg-success">col</div>
+			<div class="col bg-warning">col</div>
+			<div class="col bg-success">col</div>
+		</div>
+
+		<!-- You can also use numbers to control the column width. Just make sure that the sum adds up to 12 or fewer (it is not required that you use all 12 available columns). -->
+		<h1>Three Equal Columns Using Numbers</h1>
+		<div class="row">
+			<div class="col-4 bg-success">col-4</div>
+			<div class="col-4 bg-warning">col-4</div>
+			<div class="col-4 bg-success">col-4</div>
+		</div>
+
+		<!-- To create unequal columns, you have to use numbers. The following example will create a 25%/50%/25% split. -->
+		<h1>Three Unequal Columns</h1>
+		<div class="row">
+			<div class="col-3 bg-success">col-3</div>
+			<div class="col-6 bg-warning">col-6</div>
+			<div class="col-3 bg-success">col-3</div>
+		</div>
+
+		<!-- However, it is enough to only set the width of one column, and have the sibling columns automatically resize around it. The following example will create a 25%/50%/25% split. -->
+		<h1>Setting One Column Width</h1>
+		<div class="row">
+			<div class="col bg-success">col-3</div>
+			<div class="col-6 bg-warning">col-6</div>
+			<div class="col bg-success">col-3</div>
+		</div>
+
+		<h1>More Equal Columns</h1>
+		<div class="row">
+			<div class="col bg-success">1 of 2</div>
+			<div class="col bg-warning">2 of 2</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col bg-success">1 of 4</div>
+			<div class="col bg-warning">2 of 4</div>
+			<div class="col bg-success">3 of 4</div>
+			<div class="col bg-warning">4 of 4</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col bg-success">1 of 6</div>
+			<div class="col bg-warning">2 of 6</div>
+			<div class="col bg-success">3 of 6</div>
+			<div class="col bg-warning">4 of 6</div>
+			<div class="col bg-success">5 of 6</div>
+			<div class="col bg-warning">6 of 6</div>
+		</div>
+
+		<h1>More Unequal Columns</h1>
+		<div class="row">
+			<div class="col-8 bg-success">1 of 2</div>
+			<div class="col-4 bg-warning">2 of 2</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-2 bg-success">1 of 4</div>
+			<div class="col-2 bg-warning">2 of 4</div>
+			<div class="col-2 bg-success">3 of 4</div>
+			<div class="col-6 bg-warning">4 of 4</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-4 bg-success">1 of 4</div>
+			<div class="col-6 bg-warning">2 of 4</div>
+			<div class="col bg-success">3 of 4</div>
+			<div class="col bg-warning">4 of 4</div>
+		</div>
+
+		<!-- If one of the column is taller than the other (due to text or CSS height), the rest will follow. -->
+		<h1>Equal Height</h1>
+		<div class="row">
+			<div class="col bg-warning">
+				Lorem ipsum dolor sit amet, cibo sensibus interesset no sit. Et dolor possim volutpat qui. No malis tollit iriure eam, et vel tale zril blandit, rebum vidisse nostrum qui eu. No nostrud dolorem legendos mea, ea eum mucius oporteat platonem.Eam an case scribentur, ei clita causae cum, alia debet eu vel.
+			</div>
+			<div class="col bg-success">
+				col
+			</div>
+			<div class="col bg-warning">
+				col
+			</div>
+		</div>
+
+		<!-- The following example shows how to create a two column layout, with another two columns inside one of the columns. -->
+		<h1>Nested Columns</h1>
+		<div class="row">
+			<div class="col-8 bg-warning p-4">
+				.col-8
+				<div class="row">
+					<div class="col-6 bg-white">.col-6</div>
+					<div class="col-6 bg-danger">.col-6</div>
+				</div>
+			</div>
+			<div class="col-4 bg-success">.col-4</div>
+		</div>
+
+		<!-- The Bootstrap 4 grid system has five classes:
+		.col- (extra small devices - screen width less than 576px)
+		.col-sm- (small devices - screen width equal to or greater than 576px)
+		.col-md- (medium devices - screen width equal to or greater than 768px)
+		.col-lg- (large devices - screen width equal to or greater than 992px)
+		.col-xl- (xlarge devices - screen width equal to or greater than 1200px)
+		The classes above can be combined to create more dynamic and flexible layouts.
+		Tip: Each class scales up, so if you wish to set the same widths for sm and md, you only need to specify sm. -->
+
+		<!-- The following example shows how to create a column layout that starts out stacked on extra small devices, before becoming horizontal on larger devices (sm, md, lg and xl). -->
+		<h1>Stacked to Horizontal</h1>
+		<div class="row">
+			<div class="col-sm-9 bg-success">col-sm-9</div>
+			<div class="col-sm-3 bg-warning">col-sm-3</div>
+		</div>
+		<div class="row">
+			<div class="col-sm bg-success">col-sm</div>
+			<div class="col-sm bg-warning">col-sm</div>
+			<div class="col-sm bg-success">col-sm</div>
+		</div>
+
+		<h1>Mix and Match</h1>
+		<div class="row">
+			<div class="col-6 col-sm-9 bg-success">col-6 col-sm-9</div>
+			<div class="col-6 col-sm-3 bg-warning">col-6 col-sm-9</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-7 col-lg-8 bg-success">col-7 col-lg-8</div>
+			<div class="col-5 col-lg-4 bg-warning">col-5 col-lg-4</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-sm-3 col-md-6 col-lg-4 bg-success">col-sm-3 col-md-6 col-lg-4</div>
+			<div class="col-sm-9 col-md-6 col-lg-8 bg-warning">col-sm-9 col-md-6 col-lg-8</div>
+		</div>
+
+		<!-- Add the .no-gutters class to the .row container to remove gutters (extra space). -->
+		<h1>No gutters</h1>
+		<div class="container-fluid">
+			<div class="row no-gutters">
+				<div class="col-3 bg-success">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+					Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				</div>
+				<div class="col-9 bg-warning">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+					Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
