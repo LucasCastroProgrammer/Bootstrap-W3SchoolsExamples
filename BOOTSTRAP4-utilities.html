@@ -92,6 +92,20 @@
 		<div class="w-100 bg-warning">Width 100%</div>
 		<div class="mw-100 bg-warning">Max-width 100%</div>
 
+		<!-- Use the .sticky-top class to make any element fixed/stay at the top of the page when you scroll past it. -->
+		<h1>Navbar Sticky</h1>
+		<nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+			<a href="#" class="navbar-brand">Logo</a>
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a href="#" class="nav-link">Link</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link">Link</a>
+				</li>
+			</ul>
+		</nav>
+
 		<!-- Set the height of an element with the h-* classes (.h-25, .h-50, .h-75, .h-100, .mh-100). -->
 		<h1>Height</h1>
 		<div style="height: 200px; background-color: #ddd">
@@ -189,7 +203,7 @@
 		<div class="invisible">I am invisible</div>
 
 		<!-- Use the .fixed-top class to make any element fixed/stay at the top of the page. -->
-		<h1>Navbar fixa no topo</h1>
+		<!-- <h1>Navbar fixa no topo</h1>
 		<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
 			<a href="#" class="navbar-brand">Logo</a>
 			<ul class="navbar-nav">
@@ -200,10 +214,10 @@
 					<a href="#" class="nav-link">Link</a>
 				</li>
 			</ul>
-		</nav>
+		</nav> -->
 
 		<!-- Use the .fixed-bottom class to make any element fixed/stay at the bottom of the page. -->
-		<h1>Navbar fixa no footer</h1>
+		<!-- <h1>Navbar fixa no footer</h1>
 		<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-bottom">
 			<a href="#" class="navbar-brand">Logo</a>
 			<ul class="navbar-nav">
@@ -214,7 +228,94 @@
 					<a href="#" class="nav-link">Link</a>
 				</li>
 			</ul>
-		</nav>		
+		</nav> -->
+
+		<!-- Use the .close class to style a close icon. This is often used for alerts and modals. Note that we use the &times; symbol to create the actual icon (a better lookiong "x"). -->
+		<h1>Close icon</h1>
+		<button type="button" class="close">&times;</button>
+
+		<!-- Use the .sr-only class to hide an element on all devices, except screen readers. -->
+		<h1>Screenreaders</h1>
+		<span class="sr-only">I will be hidden on all screen except for screen readers.</span>
+
+		<!-- The classes for text colors are: .text-muted, .text-primary, .text-success, .text-info, .text-warning, .text-danger, .text-secondary, .text-white, .text-dark, .text-body (default body color/often black) and .text-light. -->
+		<h1>Colors - text</h1>
+		<p class="text-muted">This text is muted.</p>
+		<p class="text-primary">This text is important.</p>
+		<p class="text-success">This text indicates success</p>
+		<p class="text-info">This text represent some information.</p>
+		<p class="text-warning">This text represents a warning</p>
+		<p class="text-danger">This text represents danger</p>
+		<p class="text-secondary">Secondary text</p>
+		<p class="text-dark">Dark grey text</p>
+		<p class="text-body">Body text</p>
+
+		<!-- Contextual text classes can also be used on links, which will add a darker hover color. -->
+		<h1>Contextual colors for links</h1>
+		<a href="#" class="text-muted">Muted link</a>
+		<a href="#" class="text-primary">Primary link</a>
+		<a href="#" class="text-success">Success link</a>
+		<a href="#" class="text-info">Info link</a>
+		<a href="#" class="text-warning">Warning link</a>
+		<a href="#" class="text-danger">Danger link</a>
+		<a href="#" class="text-secondary">Secondary link</a>
+		<a href="#" class="text-dark">Dark link</a>
+		<a href="#" class="text-body">Body/black link</a>
+
+		<!-- You can also add 50% opacity for black or white text with the .text-black-50 or .text-white-50 classes. -->
+		<h1>Colors - opacity</h1>
+		<p class="text-black-50">Black text with opacity on white background</p>
+		<p class="text-white-50 bg-dark">White text with 50% opacity on black background</p>
+
+		<!-- The classes for background colors are: .bg-primary, .bg-success, .bg-info, .bg-warning, .bg-danger, .bg-secondary, .bg-dark and .bg-light.
+		Note that background colors do not set the text color, so in some cases you'll want to use them together with a .text-* class. -->
+		<h1>Background Colors</h1>
+		<p class="bg-primary text-white">This text is important.</p>
+		<p class="bg-success text-white">This text indicates success.</p>
+		<p class="bg-info text-white">This text represents some information.</p>
+		<p class="bg-warning text-white">This text represents a warning.</p>
+		<p class="bg-danger text-white">This text represents danger.</p>
+		<p class="bg-secondary text-white">Secondary background color.</p>
+		<p class="bg-dark text-white">Dark grey background color.</p>
+		<p class="bg-light">Light grey background color.</p>
+
+		<!-- Typography/Text Classes
+		.display-*	Display headings are used to stand out more than normal headings (larger font-size and lighter font-weight), and there are four classes to choose from: .display-1, .display-2, .display-3, .display-4	
+		.font-weight-bold	Bold text	
+		.font-weight-bolder	Bolder bold text	
+		.font-weight-normal	Normal text	
+		.font-weight-light	Light weight text	
+		.font-weight-lighter	Lighter weight text	
+		.font-italic	Italic text	
+		.lead	Makes a paragraph stand out	
+		.small	Indicates smaller text (set to 85% of the size of the parent)	
+		.text-break	Prevents long text from breaking layout	
+		.text-center	Indicates center-aligned text	
+		.text-decoration-none	Removes the underline from a link	
+		.text-left	Indicates left-aligned text	
+		.text-justify	Indicates justified text	
+		.text-monospace	Monospaced text	
+		.text-nowrap	Indicates no wrap text	
+		.text-lowercase	Indicates lowercased text	
+		.text-reset	Resets the color of a text or a link (inherits the color from its parent)	
+		.text-right	Indicates right-aligned text	
+		.text-uppercase	Indicates uppercased text	
+		.text-capitalize	Indicates capitalized text	
+		.initialism	Displays the text inside an <abbr> element in a slightly smaller font size	
+		.list-unstyled	Removes the default list-style and left margin on list items (works on both <ul> and <ol>). This class only applies to immediate children list items (to remove the default list-style from any nested lists, apply this class to any nested lists as well)	
+		.list-inline	Places all list items on a single line (used together with .list-inline-item on each <li> elements)	
+		.pre-scrollable	Makes a <pre> element scrollable
+		-->
+
+		<!-- To make an element into a block element, add the .d-block class. Use any of the d-*-block classes to control WHEN the element should be a block element on a specific screen width. -->
+		<h1>Block Elements</h1>
+		<span class="d-block bg-success">d-block</span>
+		<span class="d-sm-block bg-success">d-sm-block</span>
+		<span class="d-md-block bg-success">d-md-block</span>
+		<span class="d-lg-block bg-success">d-lg-block</span>
+		<span class="d-xl-block bg-success">d-xl-block</span>
+
+		<!-- Use .flex-* classes to control the layout with flexbox. -->
 	</div>
 </body>
 </html>
