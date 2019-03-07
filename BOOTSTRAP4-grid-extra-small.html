@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Grid Extra Small</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<!-- 	Extra small	Small	Medium	Large	Extra Large
+	Class prefix	.col-	.col-sm-	.col-md-	.col-lg-	.col-xl-
+	Screen width	<576px	>=576px	>=768px	>=992px	>=1200px -->
+
+	<!-- Assume we have a simple layout with two columns. We want the columns to split 25%/75% for ALL devices. -->
+	<!-- The following example will result in a 25%/75% split on all devices (extra small, small, medium, large and xlarge). -->
+	<div class="container">
+		<h1>Extra Small Grid Example</h1>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-3 bg-success">
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+					</p>
+				</div>
+				<div class="col-9 bg-warning">
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<h1>Exemplo: 33% por 66%</h1>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-4 bg-success">
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+					</p>
+				</div>
+				<div class="col-8 bg-warning">
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<h1>Exemplo: 50% por 50%</h1>
+		<h1>Exemplo: 33% por 66%</h1>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-6 bg-success">
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+					</p>
+				</div>
+				<div class="col-6 bg-warning">
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- In Bootstrap 4, there is an easy way to create equal width columns for all devices: just remove the number from .col-* and only use the .col class on a specified number of col elements. Bootstrap will recognize how many columns there are, and each column will get the same width. -->
+		<h1>Auto Layout Columns</h1>
+		<div class="row">
+			<div class="col bg-success">1 of 2</div>
+			<div class="col bg-warning">2 of 2</div>
+		</div>
+
+		<div class="row">
+			<div class="col bg-success">1 of 4</div>
+			<div class="col bg-warning">2 of 4</div>
+			<div class="col bg-success">3 of 4</div>
+			<div class="col bg-warning">4 of 4</div>
+		</div>
+	</div>
+</body>
+</html>
