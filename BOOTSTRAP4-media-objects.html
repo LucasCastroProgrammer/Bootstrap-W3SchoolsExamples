@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-wdith,initial-scale=1">
+	<title>Media objects com Bootstrap</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<!-- Bootstrap provides an easy way to align media objects (like images or videos) together with content. Media objects are often used to display blog comments, tweets and so on. -->
+
+	<!-- To create a media object, add the .media class to a container element, and place media content inside a child container with the .media-body class. Add padding and margins as needed, with the spacing utilities. -->
+	<div class="container">
+		<h1>Media object básico</h1>
+		<div class="media border p-3">
+			<img src="img_avatar3.png" alt="John Doe" class="mr-3 mt-3 rounded-circle" style="width:60px;">
+			<div class="media-body">
+				<h4>John Doe <small><i>Postado em Fevereiro de 2016</i></small></h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			</div>
+		</div>
+
+		<!-- Media objects can also be nested (a media object inside a media object).
+		To nest media objects, place a new .media container inside the .media-body container. -->
+		<h1>Nested media objects</h1>
+		<div class="media border p-3">
+			<img src="img_avatar3.png" alt="John Doe" class="mr-3 mt-3 rounded-circle" style="width:60px;">
+			<div class="media-body">
+				<h4>John Doe <small><i>Postado em Fevereiro de 2016</i></small></h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				<div class="media p-3">
+					<img src="img_avatar4.png" alt="Jane Doe" class="mr-3 mt-3 rounded-circle" style="width:45px;">
+					<div class="media-body">
+						<h4>Jane Doe <small><i>Postado em Março de 2016</i></small></h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- To right-align the media image, add the image after the .media-body container. -->
+		<h1>Right-Aligned Media Image</h1>
+		<div class="media border p-3">
+			<div class="media-body">
+				<h4>Joh Doe <small><i>Posted on April 19, 2016</i></small></h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			</div>
+			<img src="img_avatar3.png" alt="John Doe" class="ml-3 mt-3 rounded-circle" style="width:60px;">
+		</div>
+
+		<!-- Use the flex utilities, align-self-* classes to place the media object on the top, middle or at the bottom. -->
+		<h1>Top, Middle or Bottom Alignment</h1>
+		<div class="media">
+			<img src="img_avatar1.png" class="align-self-strat mr-3" style="width: 60px;">
+			<div class="media-body">
+				<h4>Media Top</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			</div>
+		</div>
+		<div class="media">
+			<img src="img_avatar1.png" class="align-self-center mr-3" style="width: 60px;">
+			<div class="media-body">
+				<h4>Media Middle</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			</div>
+		</div>
+		<div class="media">
+			<img src="img_avatar1.png" class="align-self-end mr-3" style="width: 60px;">
+			<div class="media-body">
+				<h4>Media Bottom</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
